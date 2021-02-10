@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="profile">
+    <div id="upper">
+        <img src="{{ url_for('static',filename='images/Nathaniel Bedassie 2019.png')}}" alt="photo of Nathaniel">
+        <h1>Nathaniel Bedassie</h1>
+        <a href="#">@bedside.inc</a>
+        <p>Greater Portmore, Jamaica</p>
+        <p>Joined {{ date_joined }}</p>
+    </div>
+    <div id="lower">
+        <p> I'm Nathaniel and I aspire to be an amazing web developer and data scientist. I also a semi-professional musician <em>(because I'm busy with school)</em>.<br> Check out my online portfolio <a href="https://bedassie-n.github.io">here</a>.
+        </p>
+        <div class="stats">
+            <div id="posts">
+                <p>7</p>
+                <h3>Posts</h3>
+            </div>
+            <div id="following">
+                <p>100</p>
+                <h3>Following</h3>
+            </div>
+            <div id="followers">
+                <p>250</p>
+                <h3>Followers</h3>
+            </div>
+        </div>
+        <button>Follow</button>
+    </div>
+</div>
+{% endblock %}
