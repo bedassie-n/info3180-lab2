@@ -78,7 +78,7 @@ img[alt="photo of Nathaniel"]{
     grid-area: followers;
 }
 
-#lower > button{
+.follow{
     grid-area: button;
     height: 40px;
     width: 200px;
@@ -92,8 +92,21 @@ img[alt="photo of Nathaniel"]{
     transition: all 0.5s ease;
 }
 
-#lower > button:hover{
+.follow:hover{
     cursor: pointer;
     background-color: azure;
     color: #007bff;
+}
+
+.followed{
+    grid-area: button;
+    height: 40px;
+    width: 200px;
+    align-self: center;
+    justify-self: center;
+    background-color: #fff;
+    color: gray;
+    cursor: default;
+    border: 1px solid gray;
+    border-radius: 5em;
 }

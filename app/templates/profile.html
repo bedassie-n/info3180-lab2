@@ -26,7 +26,11 @@
                 <p>Followers</p>
             </div>
         </div>
-        <button>Follow</button>
+        <button class="follow">Follow</button>
     </div>
 </div>
+{% endblock %}
+
+{% block js %}
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 {% endblock %}
